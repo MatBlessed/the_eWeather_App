@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>The eWeather App</title>
+    <link rel="stylesheet" type="text/css" href="../resources/styles.css">
+</head>
+<body>
+    <header>
+        <div class="search_div">
+            <div><h1>The eWeather App</h1></div>
+            <input type="text" id="locationInput" placeholder="Enter Location (e.g. City or Zip Code)" value="">
+            <div>
+                <button onclick="getWeather()">Get Weather</button>
+                <button onclick="fetchWeatherByGeolocation()">Use My Location</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="weatherDisplay">
+        <!-- Weather data will be displayed here -->      
+    </div>
+
+    <script src="../resources/script.js"></script>
+</body>
+</html>
